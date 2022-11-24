@@ -1,5 +1,4 @@
 #!/bin/bash
-#I'm not very good at Englih lol.
 FORMAT="png"
 NAME="Screenshot from $(date "+%d-%m-%y %H:%M:%S")"
 PICTPATH="$HOME/Pictures/Screenshots/"
@@ -34,12 +33,10 @@ case $1 in
             echo ""
             echo -e "A screenshot of the selected area will be taken and it will be named ${BLUE}'${OUTPUT}'${NORMAL} and saved to ${PURPLE}'${PICTPATH}'${NORMAL}."
             echo ""
-            #echo -e "If you want to change the path/name/format then after the '-S/-A/-W' argument specify in the correct order: ${BLUE}'file_path/[space]file_name[space]format'${NORMAL} For example ${PURPLE}'hyprland-screenshot-tool -A /home/usrname/Pictures/ 12 png'${NORMAL} ${RED}(the last '/' in the path is required)${NORMAL}. If you not use the '-S/-A/-W' arguments then specify the ${RED}'-c'${NORMAL} argument."
             echo ""
             echo "'-S' or empty to take a screenshot of the entire screen."
             echo "'-A' to take a screenshot of the selected area."
             echo "'-W' to take a screenshot of the focused window."
-            #echo "'-c' to change path/name/format if you not use '-S/-A/-W' argument"
             echo "'-h'available arguments." ;;
 esac
 if [ "$help" = 0 ];
